@@ -72,6 +72,9 @@
     methods: {
       pickPlan (plan) {
         this.selectedPlan = plan
+        this.$emit('update', {
+          plan: this.selectedPlan
+        })
       }
     }
   }
